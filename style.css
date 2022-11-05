@@ -103,10 +103,6 @@ p, .span2 {
     background-color: hsl(212, 21%, 14%);
 }
 
-.attribution {
-    display: flex;
-    justify-content: center;
-}
 
 @media all and (max-width: 375px) {
     .container {
@@ -142,13 +138,5 @@ p, .span2 {
     }
     .prices .span1 {
         font-size: 2rem;
-    }
-    .attribution {
-        font-size: 0.6rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .attribution span {
-        text-align: center;
     }
 }
