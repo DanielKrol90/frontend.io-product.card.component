@@ -19,7 +19,10 @@
 <body>
   <main class="container">
     <div class="preview-image">
-      <img src="./images/image-product-desktop.jpg" alt="image of product" />
+      <picture>
+        <source media="(min-width:376px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="image of product">
+      </picture>
     </div>
     <div class="product-info">
       <p class="p1">perfume</p>
@@ -41,12 +44,10 @@
     </div>
   </main>
 
-  <footer>
-    <div class="attribution">
+  <footer class="attribution">
       <span> Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       </span>
       <span>Coded by <a href="#">DAKR</a>.</span>
-    </div>
   </footer>
 
 </body>
