@@ -34,7 +34,7 @@ body {
 
 .product-info {
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -43,14 +43,14 @@ body {
     font-size: 1.5rem;
     letter-spacing: 10px;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .product-info h1 {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 2.4rem;
     margin-bottom: 2rem;
 }
 
@@ -139,5 +139,13 @@ p, .span2 {
     }
     .prices .span1 {
         font-size: 2rem;
+    }
+    .attribution {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .attribution span {
+        text-align: center;
     }
 }
