@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
@@ -15,31 +21,49 @@ body {
     border-radius: 30px;
     
 }
-.container .preview-image {
+.preview-image {
     width: auto;
 }
 
-.container .preview-image img {
+.preview-image img {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: auto;
     height: 800px;
 }
 
-.container .product-info {
+.product-info {
     width: 50%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
 }
 
-.container .product-info h1 {
+.p1 {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.product-info h1 {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
     font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
 }
+
+.p2 {
+    font-size:1.1rem;
+    margin-bottom: 2rem;
+}
+
 .prices {
     font-family: 'Fraunces', serif;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 p, .span2 {
@@ -52,6 +76,12 @@ p, .span2 {
     font-weight: 800;
 }
 
+.span2 {
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
 .primary-button {
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
@@ -59,11 +89,55 @@ p, .span2 {
     border: 0;
     padding: 1rem;
     margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
 }
 
+.primary-button img {
+    margin-right: 1rem;
+    width: 23px;
+    height: auto;
+}
 
+.primary-button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
 
 .attribution {
     display: flex;
     justify-content: center;
+}
+
+@media all and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        height: auto;
+        width: auto;
+    }
+    .preview-image {
+        height: 400px;
+    }
+    .preview-image img {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 30px;
+    }
+    .product-info {
+        width: 100%;
+    }
+    .product-info h1 {
+        font-size: 2rem;
+    }
+    .prices {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+    .prices .span1 {
+        font-size: 2rem;
+    }
 }
