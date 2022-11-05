@@ -128,6 +128,7 @@ p, .span2 {
     }
     .product-info {
         width: 100%;
+        padding: 0.5rem;
     }
     .product-info h1 {
         font-size: 2rem;
