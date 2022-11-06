@@ -133,8 +133,9 @@ p, .span2 {
     }
     .prices {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 1rem;
+
     }
     .prices .span1 {
         font-size: 2rem;
