@@ -1,4 +1,6 @@
-LINK to Final Effect : https://io-product-card.netlify.app/
+LINK to Final Effect : <a href="https://card-pageproject.netlify.app"> TO SEE </a>
+
+Resposive prodcut card
 
 # Frontend Mentor - Product preview card component
 
